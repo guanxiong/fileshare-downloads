@@ -11,12 +11,12 @@
     <meta name="theme-color" content="#17253d" />
     <meta
       name="description"
-      content="FileShare 把共享文件、Obsidian 知识库与代码上下文汇集到团队自己的 GitHub 仓库，自动同步并生成可读的项目变化记录。"
+      content="FileShare 把项目资料与 Obsidian 项目知识同步到团队自己的 GitHub 仓库，并用关联源连接代码、飞书、设计稿和网站。"
     />
     <meta property="og:title" content="FileShare｜一个项目，一份完整上下文" />
     <meta
       property="og:description"
-      content="共享文件、知识库和代码上下文，在同一个 GitHub 项目仓库持续对齐，供团队成员与 AI Agent 使用。"
+      content="项目资料、项目知识、项目规则和关联源导航，在同一个 GitHub 项目上下文中持续对齐，供团队成员与 AI Agent 使用。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
@@ -49,18 +49,18 @@
           <div class="hero-copy">
             <p class="eyebrow">Project context drive · macOS</p>
             <h1>把整个项目，交给人和 <em>Agent</em> 一起读懂。</h1>
-            <p class="hero-lead">FileShare 把共享文件、Obsidian 知识库与代码上下文汇集到团队自己的 GitHub 仓库。人继续使用熟悉的文件夹，Agent 获得同一份、持续更新的项目上下文。</p>
+            <p class="hero-lead">FileShare 把项目资料和 Obsidian 项目知识同步到团队自己的 GitHub 仓库，再用关联源连接代码、飞书、设计稿和网站。人保留原有工具，Agent 获得一份持续更新、边界清楚的项目上下文。</p>
             <div class="hero-actions">
               <a class="button button-primary" href="/downloads/FileShare.dmg" download>下载 FileShare <span>↓</span></a>
               <a class="button button-secondary" href="#agent">看看如何分享给团队</a>
             </div>
-            <p class="release-note">v0.2.4 · Apple 芯片 Mac · Developer ID 签名并通过 Apple 公证</p>
+            <p class="release-note">v0.3.0 · Apple 芯片 Mac · Developer ID 签名并通过 Apple 公证</p>
           </div>
           <figure class="product-frame">
-            <img src="/assets/project-overview.png" width="1440" height="900" alt="FileShare 当前产品界面，显示 ClawSphere 项目的三类目录映射、自动规则与项目动态" />
+            <img src="/assets/project-overview.png" width="1440" height="900" alt="FileShare 当前产品界面，显示 ClawSphere 的项目资料、项目知识、关联源、自动规则与项目动态" />
           </figure>
           <div class="proof-strip" aria-label="当前产品能力">
-            <span>多项目</span><span>三类上下文</span><span>自动同步</span><span>业务变化记录</span><span>云端版本浏览</span>
+            <span>多项目</span><span>关联源</span><span>自动同步</span><span>业务变化记录</span><span>云端版本浏览</span>
           </div>
         </div>
       </section>
@@ -69,22 +69,22 @@
         <div class="container">
           <div class="section-head">
             <div>
-              <p class="section-label">01 / One project, three contexts</p>
-              <h2>一个项目，三种来源，<br />一份<em>机器可读上下文。</em></h2>
+              <p class="section-label">01 / One project, clear boundaries</p>
+              <h2>一个项目，两类内容，<br />一组<em>可定位关联源。</em></h2>
             </div>
             <p>不是把所有东西塞进同一个本地目录，而是保留每种工作的原有习惯，再按项目规约映射到统一仓库。</p>
           </div>
           <div class="context-map">
             <div class="context-sources">
-              <article class="context-card"><span>01</span><div><b>共享文件</b><p>合同、报价、方案、交付物，以及团队按文件夹整理的业务材料。</p></div></article>
-              <article class="context-card"><span>02</span><div><b>知识库</b><p>Obsidian / Vault 中的项目决策、背景、会议记录与长期知识。</p></div></article>
-              <article class="context-card"><span>03</span><div><b>代码上下文</b><p>工程目录的只读上下文快照；原始模块仍由各自 Git 仓库维护。</p></div></article>
+              <article class="context-card"><span>01</span><div><b>项目资料</b><p>合同、报价、方案、交付物，以及团队按文件夹整理的业务材料。</p></div></article>
+              <article class="context-card"><span>02</span><div><b>项目知识</b><p>Obsidian 项目目录中的背景、决策、会议记录与长期知识。</p></div></article>
+              <article class="context-card"><span>03</span><div><b>关联源</b><p>代码仓库、飞书、Figma、网站或本机目录保留在原系统，只登记可移植入口。</p></div></article>
             </div>
             <div class="context-route">按项目规约<br />自动映射</div>
             <article class="repository-card">
               <div class="repo-mark">GIT</div>
-              <div><h3>项目上下文仓库</h3><p>README 说明项目背景，AGENTS.md 约定目录分配，让人和 Agent 都知道从哪里读取输入、把交付放到哪里。</p></div>
-              <small>shared-files/ · knowledge-base/ · code-context/</small>
+              <div><h3>项目上下文仓库</h3><p>README 说明背景，AGENTS.md 约定协作规则，PROJECT.yaml 与 CONTEXT_INDEX.md 为人和 Agent 提供机器可读导航。</p></div>
+              <small>project-files/ · project-knowledge/ · linked_sources</small>
             </article>
           </div>
         </div>
@@ -97,11 +97,11 @@
             <p>FileShare 不要求团队学习提交、分支和合并。它把需要判断的变化显性化，把机械的版本管理留在后台。</p>
           </div>
           <div class="feature-list">
-            <article class="feature-row"><span>01</span><h3>多项目工作区</h3><p>每个项目独立绑定 GitHub 仓库和三类本地目录；左侧栏快速切换，不混用同步状态与历史记录。</p></article>
+            <article class="feature-row"><span>01</span><h3>多项目工作区</h3><p>每个项目独立绑定 GitHub 仓库、项目资料和项目知识；左侧栏快速切换，不混用同步状态与历史记录。</p></article>
             <article class="feature-row"><span>02</span><h3>自动同步与冲突保护</h3><p>文件变化自动形成版本并同步。发现冲突就暂停并保留双方内容，不会为了“同步成功”静默覆盖。</p></article>
             <article class="feature-row"><span>03</span><h3>可读的项目动态</h3><p>规则引擎把一次文件更新整理成业务变化、工程影响与风险提示；固定规则运行时不消耗 AI Token。</p></article>
             <article class="feature-row"><span>04</span><h3>云端文件与版本浏览</h3><p>在桌面端直接查看 GitHub 当前文件、目录和历史版本，明确区分本地工作副本与云端生效版本。</p></article>
-            <article class="feature-row"><span>05</span><h3>README + AGENTS.md</h3><p>项目说明与机器协作规约跟随仓库同步，形成团队成员和不同 Agent 都能复用的项目入口。</p></article>
+            <article class="feature-row"><span>05</span><h3>四个项目规则文件</h3><p>README、AGENTS、PROJECT.yaml 与 CONTEXT_INDEX 跟随仓库同步，让本地和云端 Agent 使用同一份入口与边界。</p></article>
           </div>
         </div>
       </section>
@@ -115,7 +115,8 @@
             <ol class="agent-steps">
               <li>固定官方域名、版本文件与 SHA-256 校验流程。</li>
               <li>绑定当前项目仓库，不复用分享者的本地路径。</li>
-              <li>逐项询问共享文件、知识库和代码上下文目录。</li>
+              <li>分别选择新的项目资料和项目知识空目录。</li>
+              <li>根据 PROJECT.yaml 为当前设备绑定需要的关联源。</li>
               <li>遇到登录、授权、覆盖或合并风险时停下来交给人。</li>
             </ol>
           </div>
@@ -135,7 +136,7 @@
           <div class="trust-items">
             <article class="trust-item"><span>✓</span><div><b>文件在团队自己的 GitHub</b><p>桌面端直接连接已授权仓库；FileShare 不要求把项目文件先上传到另一套云存储。</p></div></article>
             <article class="trust-item"><span>✓</span><div><b>凭据进入 macOS 钥匙串</b><p>GitHub 授权信息使用系统安全存储；项目分享提示词不包含密码、Token、本地路径或文件内容。</p></div></article>
-            <article class="trust-item"><span>✓</span><div><b>代码上下文不替代工程仓库</b><p>统一仓库保存可查询的项目快照；工程团队仍在原始模块仓库提交代码，不制造双向 Git 冲突。</p></div></article>
+            <article class="trust-item"><span>✓</span><div><b>关联源不复制、不接管</b><p>代码、飞书和设计稿仍由原系统管理；FileShare 只同步导航信息，不制造第二套工程历史或权限体系。</p></div></article>
             <article class="trust-item"><span>✓</span><div><b>敏感证据默认隐藏</b><p>活动记录可以提示风险与类别，但不会在界面中直接展示凭据、身份材料和其他严格敏感内容。</p></div></article>
           </div>
         </div>
@@ -148,8 +149,8 @@
             <div class="download-action">
               <p>适用于 Apple 芯片 Mac。打开 DMG，将 FileShare 拖入“应用程序”，然后连接 GitHub 项目仓库。</p>
               <a class="button" href="/downloads/FileShare.dmg" download>下载 macOS 安装包 <span>↓</span></a>
-              <small>v0.2.4 · 25.6 MB · Developer ID 签名与 Apple 公证</small>
-              <p class="checksum">SHA-256：9cd71ed11d4681499da597ece93f8ebfec94e884345162008ac5104bdb0f5453</p>
+              <small>v0.3.0 · 25.2 MB · Developer ID 签名与 Apple 公证</small>
+              <p class="checksum">SHA-256：eae50920290cb10d9e6eb5d6a11a41c87ff80d353b731737842c988fe0a14f93</p>
             </div>
           </div>
         </div>
@@ -159,10 +160,10 @@
         <div class="container faq-grid">
           <div><p class="section-label">05 / FAQ</p><h2>开始之前，先把工作方式说清楚。</h2></div>
           <div class="faq-list">
-            <details open><summary><span>01</span>团队成员需要会 Git 吗？</summary><p>不需要。成员只需连接 GitHub 仓库、选择三类目录并开启自动同步。提交、拉取和安全版本由 FileShare 在后台处理。</p></details>
-            <details><summary><span>02</span>为什么必须选择三类目录？</summary><p>这是 FileShare 的项目规约：共享文件对应日常业务材料，知识库对应 Obsidian 等长期知识，代码上下文对应工程快照。三者用途和生命周期不同，不应该被迫整理成同一种本地结构。</p></details>
-            <details><summary><span>03</span>分享项目时会暴露我的本地路径吗？</summary><p>不会。分享提示词只包含官方下载安装流程、当前 GitHub 仓库和安全步骤。新成员需要在自己的电脑上重新选择三个目录。</p></details>
-            <details><summary><span>04</span>代码会不会和原模块仓库冲突？</summary><p>不会直接写回原模块仓库。代码上下文作为项目级快照进入统一仓库，工程提交仍回到各模块自己的 Git 工作流。</p></details>
+            <details open><summary><span>01</span>团队成员需要会 Git 吗？</summary><p>不需要。成员只需连接 GitHub 仓库、选择项目资料与项目知识目录并开启自动同步。提交、拉取和安全版本由 FileShare 在后台处理。</p></details>
+            <details><summary><span>02</span>为什么要分别选择两个目录？</summary><p>项目资料对应人类按文件夹整理的业务材料，项目知识对应可由 Obsidian 直接打开的 Markdown 项目目录。两者用途和协作方式不同，但都会进入同一份项目上下文。</p></details>
+            <details><summary><span>03</span>分享项目时会暴露我的本地路径吗？</summary><p>不会。分享提示词只包含官方下载安装流程、当前 GitHub 仓库、可移植的关联源地址和安全步骤。新成员在自己的电脑上重新选择两个目录并单独绑定本机来源。</p></details>
+            <details><summary><span>04</span>代码会不会和原模块仓库冲突？</summary><p>不会。代码仓库作为关联源保留在原 Git 工作流中，FileShare 不复制代码、不执行工程提交，只通过 PROJECT.yaml 帮助人和 Agent 定位。</p></details>
             <details><summary><span>05</span>当前支持哪些平台？</summary><p>当前正式发布 Apple 芯片 Mac 版本，安装包经过 Developer ID 签名和 Apple 公证。其他平台会在完成同等级别的安装与同步验收后发布。</p></details>
           </div>
         </div>

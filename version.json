@@ -1,8 +1,8 @@
 {
-  "version": "0.2.4",
+  "version": "0.3.0",
   "architecture": "darwin-aarch64",
-  "published_at": "2026-08-24T10:15:00Z",
+  "published_at": "2026-08-24T18:42:27Z",
   "download": "/downloads/FileShare.dmg",
-  "sha256": "9cd71ed11d4681499da597ece93f8ebfec94e884345162008ac5104bdb0f5453",
-  "bytes": 25609858
+  "sha256": "eae50920290cb10d9e6eb5d6a11a41c87ff80d353b731737842c988fe0a14f93",
+  "bytes": 25196469
 }
