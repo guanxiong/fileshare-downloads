@@ -3,7 +3,7 @@
   "short_name": "FileShare",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#eef3f8",
-  "theme_color": "#152238",
+  "background_color": "#f4f6f8",
+  "theme_color": "#17253d",
   "icons": []
 }
