@@ -1,10 +1,10 @@
 {
-  "version": "0.3.1",
-  "notes": "FileShare 0.3.1：同步可靠性、成员接入流程与桌面体验更新。",
-  "pub_date": "2026-08-25T00:17:01Z",
+  "version": "0.3.2",
+  "notes": "FileShare 0.3.2：同步可靠性、成员接入流程与桌面体验更新。",
+  "pub_date": "2026-08-25T02:24:52Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZnJvVXRhN0VnYjNBQlg5NUtsdjYyUE95Qm8rZ0FDVWROVGgrdXgvbGVtQUJBU1NmZXpSaERxN0MwMU55SUk1QVJBanF5Q2pPQTB2RWZmeEp4UU1LSlh4UG9SN2Iyc3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3NjE3MDIwCWZpbGU6RmlsZVNoYXJlLmFwcC50YXIuZ3oKYkxpU3pnR1hwa3VsaTVXcHNBNFQvYlJhRjhsOVJSbWt3SmRRMU5GQ0JUZDhCcFBCbkVQeVBjUlNaa1p3bDhNdXBWRGZTYy80WDFtd1FRakExVmpiRFE9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZnJvVXRhN0VnYnhxbEFDNUpNU2tRNU1aS2xQeUpEQlFjUjV3aGJLRlE3UTg5M2xpY0dWaDdRcXpReHQ4UDNHaXZXN29TQnBraTBDeHBjR0doeXpkenV3MHZuVndOdHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3NjI0NjkyCWZpbGU6RmlsZVNoYXJlLmFwcC50YXIuZ3oKamtZUEtNMEtBc1NTOGJiMFh1L0k3a0Q1ZFI1eWthSmtSdkd6TEZKaWZPbDBGQmNOWVFNdy9UY0pBU3hjK1FzeGJFZm5lWjVYOWhray83ZFk1WEY2QkE9PQo=",
       "url": "https://file.shareapi.ai/updates/FileShare.app.tar.gz"
     }
   }
