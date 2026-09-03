@@ -1,12 +1,12 @@
 {
-  "version": "0.3.7",
+  "version": "0.3.30",
   "architecture": "darwin-universal",
   "platforms": [
     "darwin-aarch64",
     "darwin-x86_64"
   ],
-  "published_at": "2026-08-26T05:38:15Z",
+  "published_at": "2026-09-03T02:59:11Z",
   "download": "/downloads/FileShare.dmg",
-  "sha256": "f77cd4eb3bbe26f8deb628ec19983de2ef2634e8c4bbbc91dcf00574c30aed14",
-  "bytes": 52354116
+  "sha256": "a2cd822553f1ae46f1f99f9dc31a6d49beb4ab00b5db2e683864ee7c1dfe508e",
+  "bytes": 62755949
 }

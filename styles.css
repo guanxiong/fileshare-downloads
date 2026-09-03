@@ -154,6 +154,27 @@
       .footer-links a { text-decoration: none; }
       .footer-links a:hover { color: var(--ink); }
 
+      .legal-page { min-height: calc(100vh - 137px); padding: clamp(64px, 9vw, 112px) 0; }
+      .legal-shell { width: min(calc(100% - 48px), 860px); margin-inline: auto; }
+      .legal-shell .eyebrow { margin-bottom: 20px; }
+      .legal-shell h1 { max-width: 760px; margin-bottom: 24px; font-size: clamp(44px, 7vw, 72px); }
+      .legal-lead { max-width: 760px; color: var(--muted); font-size: 18px; line-height: 1.75; }
+      .legal-meta { margin: 26px 0 0; padding: 14px 16px; color: #4f6179; border: 1px solid var(--line); border-radius: 12px; background: #fff; font-size: 13px; }
+      .legal-content { margin-top: 52px; display: grid; gap: 38px; }
+      .legal-content section { scroll-margin-top: 90px; }
+      .legal-content h2 { margin-bottom: 12px; font-size: 25px; letter-spacing: -0.025em; }
+      .legal-content h3 { margin: 20px 0 8px; font-size: 17px; }
+      .legal-content p, .legal-content li { color: #526177; font-size: 15px; line-height: 1.8; }
+      .legal-content ul, .legal-content ol { margin: 12px 0 0; padding-left: 22px; }
+      .legal-content li + li { margin-top: 8px; }
+      .legal-content a { color: var(--blue); text-underline-offset: 3px; }
+      .legal-callout { padding: 20px; border: 1px solid #cddbef; border-radius: 16px; background: var(--blue-soft); }
+      .legal-callout p:last-child { margin-bottom: 0; }
+      .support-grid { margin-top: 26px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+      .support-card { padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
+      .support-card h2 { font-size: 18px; }
+      .support-card p { margin-bottom: 0; font-size: 14px; }
+
       @media (max-width: 900px) {
         nav { display: none; }
         .section-head, .agent-grid, .trust-grid, .download-panel, .faq-grid { grid-template-columns: 1fr; gap: 34px; }
@@ -190,6 +211,8 @@
         .download-panel { padding: 30px 22px; border-radius: 22px; }
         details p { margin-left: 0; }
         footer { grid-template-columns: 1fr; }
+        .legal-shell { width: min(calc(100% - 32px), 860px); }
+        .support-grid { grid-template-columns: 1fr; }
       }
       @media (prefers-reduced-motion: reduce) {
         html { scroll-behavior: auto; }
